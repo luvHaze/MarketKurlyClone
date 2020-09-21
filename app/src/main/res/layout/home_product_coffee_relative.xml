@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee" />
+
+    <TextView
+        android:id="@+id/item_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/kakao_regular"
+        android:letterSpacing="0.01"
+        android:text="Today's Coffee"
+        android:textColor="@color/colorText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/item_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_text1"
+        android:layout_alignStart="@id/item_text1"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/kakao_bold"
+        android:letterSpacing="0.0001"
+        android:text="아라비카 프리미엄 원두"
+        android:textColor="@color/colorText"
+        android:textSize="36dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_text2"
+        android:layout_alignStart="@+id/item_text2"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/jeju_myeongjo"
+        android:letterSpacing="0.03"
+        android:text="테마관 상품 2천원 할인쿠폰 증정"
+        android:textColor="@color/colorTextBlendWhite" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_text2"
+        android:layout_alignStart="@+id/item_text2"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="223dp"
+        android:text="09.04 ~ 09.30"
+        android:textColor="@color/colorTextBlendWhite" />
+</RelativeLayout>

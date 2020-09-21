@@ -14,12 +14,13 @@
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/topAppBar"
-            style="@style/Widget.MaterialComponents.Toolbar.PrimarySurface"
+            style="@style/Widget.MaterialComponents.Toolbar.Primary"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:foregroundTint="#FFFFFF"
             app:logo="@drawable/logo_market_kurly_white2"
             app:menu="@menu/top_app_bar" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -41,10 +42,11 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="wrap_content"
         app:labelVisibilityMode="labeled"
         android:background="#fcfcfc"
         app:itemIconSize="20dp"
+        app:itemTextColor="@color/colorText"
         app:menu="@menu/bottom_navigation_menu"/>
 
 </LinearLayout>
