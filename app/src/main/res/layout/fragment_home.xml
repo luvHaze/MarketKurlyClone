@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackgroundGrey"
     android:orientation="vertical"
     tools:context=".fragment.HomeFragment">
 
@@ -33,12 +34,25 @@
 
             <!-- 상품 사진 [Relative Layout]-->
             <include layout="@layout/home_product_coffee_relative" />
+            <!-- 오늘 추천 [Grid Layout] -->
+            <include layout="@layout/home_todaypick_gridlayout" />
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="16" />
-
-            <include layout="@layout/home_category_gridlayout" />
+                android:background="#FFFFFF"
+                android:layout_height="48dp"
+                android:text="Category"
+                android:fontFamily="@font/kakao_regular"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="12dp"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"/>
+            <!-- 카테고리 [Table Layout] -->
+            <include layout="@layout/home_category_tablelayout"/>
 
         </LinearLayout>
     </ScrollView>

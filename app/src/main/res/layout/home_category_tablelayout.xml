@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!-- 추석 선물세 -->
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_gift_box"
+            app:tint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/kakao_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="추석 선물세트"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="#9F9F9F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="1dp"
+        android:background="#E6E6E6" />
+    <!-- 정육 -->
+    <LinearLayout
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_strawberry"
+            app:tint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/kakao_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="과일 / 청과"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="#9F9F9F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="1dp"
+        android:background="#E6E6E6" />
+    <!-- 과일 -->
+    <LinearLayout
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_instant"
+            app:tint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/kakao_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="냉동식품"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="#9F9F9F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="1dp"
+        android:background="#E6E6E6" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/ic_salt"
+            app:tint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/kakao_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="조미료"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="#9F9F9F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="1dp"
+        android:background="#E6E6E6" />
+
+    <LinearLayout
+        android:paddingLeft="10dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_fish"
+            app:tint="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:fontFamily="@font/kakao_regular"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="수산 / 해산 / 건어물"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:tint="#9F9F9F" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="1dp"
+        android:background="#E6E6E6" />
+
+</TableLayout>
