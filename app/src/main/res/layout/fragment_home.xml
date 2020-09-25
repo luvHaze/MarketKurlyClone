@@ -54,6 +54,23 @@
             <!-- 카테고리 [Table Layout] -->
             <include layout="@layout/home_category_tablelayout"/>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:background="#FFFFFF"
+                android:layout_height="48dp"
+                android:text="이벤트 소식"
+                android:fontFamily="@font/kakao_regular"
+                android:textColor="@color/colorText"
+                android:textStyle="bold"
+                android:letterSpacing="0.02"
+                android:layout_marginTop="12dp"
+                android:paddingTop="8dp"
+                android:textSize="16sp"
+                android:paddingLeft="16dp"
+                android:gravity="center_vertical"/>
+
+            <include layout="@layout/home_event_news_constraint"/>
+
         </LinearLayout>
     </ScrollView>
 
