@@ -18,7 +18,7 @@
         android:label="SearchFragment" />
     <fragment
         android:id="@+id/homeFragment2"
-        android:name="luv.zoey.layoutsample.fragment.HomeFragment"
+        android:name="luv.zoey.layoutsample.fragment.home_fragment.HomeFragment"
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" />
 </navigation>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundGrey"
     android:orientation="vertical"
-    tools:context=".fragment.HomeFragment">
+    tools:context=".fragment.home_fragment.HomeFragment">
 
 
     <com.google.android.material.tabs.TabLayout
@@ -23,56 +23,10 @@
         app:tabTextAppearance="@style/TabText"
         app:tabTextColor="@color/colorText" />
 
-    <ScrollView
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/home_tab_viewPager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <!-- 상품 사진 [Relative Layout]-->
-            <include layout="@layout/home_product_coffee_relative" />
-            <!-- 오늘 추천 [Grid Layout] -->
-            <include layout="@layout/home_todaypick_gridlayout" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:background="#FFFFFF"
-                android:layout_height="48dp"
-                android:text="Category"
-                android:fontFamily="@font/kakao_regular"
-                android:textColor="@color/colorText"
-                android:textStyle="bold"
-                android:letterSpacing="0.02"
-                android:layout_marginTop="12dp"
-                android:paddingTop="8dp"
-                android:textSize="16sp"
-                android:paddingLeft="16dp"
-                android:gravity="center_vertical"/>
-            <!-- 카테고리 [Table Layout] -->
-            <include layout="@layout/home_category_tablelayout"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:background="#FFFFFF"
-                android:layout_height="48dp"
-                android:text="이벤트 소식"
-                android:fontFamily="@font/kakao_regular"
-                android:textColor="@color/colorText"
-                android:textStyle="bold"
-                android:letterSpacing="0.02"
-                android:layout_marginTop="12dp"
-                android:paddingTop="8dp"
-                android:textSize="16sp"
-                android:paddingLeft="16dp"
-                android:gravity="center_vertical"/>
-
-            <include layout="@layout/home_event_news_constraint"/>
-
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent" />
 
 
 </LinearLayout>

@@ -4,62 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/colorBackgroundGrey"
-    tools:context=".fragment.HomeFragment">
+    android:orientation="vertical"
+    tools:context=".fragment.home_fragment.HomeFragment">
 
-    <com.google.android.material.textfield.TextInputLayout
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <GridLayout
         android:layout_width="match_parent"
-        android:layout_height="64dp"
-        android:layout_marginTop="8dp"
-        android:elevation="1dp"
-        android:hint="검색어를 입력해주세요"
-        app:hintAnimationEnabled="false"
-        app:endIconMode="clear_text"
-        app:startIconDrawable="@drawable/ic_search">
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="4"
+        android:padding="15dp"
+        android:rowCount="3">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:layout_margin="8dp"
-            android:background="#FFFFFF"
-            android:fontFamily="@font/kakao_regular"
-            android:outlineProvider="none"
-            android:textColor="@color/colorText" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:background="#FFFFFF"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent">
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_fish" />
 
         <TextView
-            android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="64dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_row="1"
+            android:layout_column="0"
             android:fontFamily="@font/kakao_regular"
-            android:text="인기 검색어"
-            android:textColor="@color/colorTextBlendWhite"
-            android:textSize="12sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            android:gravity="center"
+            android:text="생선"
+            android:textColor="@color/colorText"
+            android:textSize="16sp" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    </GridLayout>
 
 </LinearLayout>
